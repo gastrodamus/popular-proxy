@@ -9,8 +9,8 @@ const httpProxy = require('http-proxy');
 const proxy = httpProxy.createProxyServer();
 
 app.use(morgan('dev'));
-app.get('/loaderio-abb820eebf97b45a4f704dd5d3f1e2cc', (req, res) => {
-    res.status(200).send('loaderio-abb820eebf97b45a4f704dd5d3f1e2cc');
+app.get('/loaderio-75c9f15d0646eea48e873c56689d21f7', (req, res) => {
+    res.status(200).send('loaderio-75c9f15d0646eea48e873c56689d21f7');
   });
 app.use('/:id', express.static(path.join(__dirname, '/../client')));
 
