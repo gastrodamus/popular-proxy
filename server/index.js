@@ -9,6 +9,9 @@ const httpProxy = require('http-proxy');
 const proxy = httpProxy.createProxyServer();
 
 app.use(morgan('dev'));
+app.get('/loaderio-abb820eebf97b45a4f704dd5d3f1e2cc', (req, res) => {
+    res.status(200).send('loaderio-abb820eebf97b45a4f704dd5d3f1e2cc');
+  });
 app.use('/:id', express.static(path.join(__dirname, '/../client')));
 
 // const gallery = 'http://localhost:3000';
