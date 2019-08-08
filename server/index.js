@@ -13,7 +13,11 @@ app.use('/:id', express.static(path.join(__dirname, '/../client')));
 
 // const gallery = 'http://localhost:3000';
 // const reservation = 'http://localhost:3001';
+
+// change the url to aws url to deploy the service on ec2 
+//const popular = 'http://ec2-18-219-238-206.us-east-2.compute.amazonaws.com:3002';
 const popular = 'http://localhost:3002';
+
 // const header = 'http://localhost:3003';
 
 // app.all('/gallery/:id', function(req, res) {
